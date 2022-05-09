@@ -47,14 +47,6 @@ DONE        AND R4, R4, #0      ; Get the null char.
             PUTS                ; Print the string.
             HALT                ; Halt.
             
-QUES        AND R0, R0, #0
-            ADD R0, R0, #15     ; load '?' to R0 (63 -> 0x003f)
-            ADD R0, R0, #15
-            ADD R0, R0, #15
-            ADD R0, R0, #15
-            ADD R0, R0, #3
-            BRnzp HERE
-            
 
             ; TODO: Add any additional required constants below this point.
 
